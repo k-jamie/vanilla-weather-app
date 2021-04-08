@@ -25,7 +25,7 @@ p {
 }
 
 .weather-app {
-  max-width: 720px;
+  max-width: 600px;
   background-color: #ffb400;
   border-radius: 20px;
   margin: 20px auto;
