@@ -40,9 +40,23 @@ function displayTemperature(response) {
     console.log(response.data);
 }
 
+function search(city) {
 let apiKey = "bef9f91b8c0ad49d1982384e026f7513";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=${apiKey}&units=metric`;
-
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+
+search("Aberdeen");
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 
 

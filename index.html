@@ -23,9 +23,28 @@
   <body>
     <div class="container">
       <div class="weather-app">
+        <form id="search-form" class="mb-4">
+          <div class="row">
+            <div class="col-9">
+        <input 
+        type="search" 
+        placeholder="Type a city..." 
+        class="form-control"
+        id="city-input"
+        />
+        </div>
+        <div class="col-3">
+        <input type="submit" 
+        value="Search" 
+        class="btn btn-primary w-100"/>
+        </div>
+        </div>
+        </form>
         <div class="row">
           <div class="col-6">
-          <img src="images/partly_cloudy@4x.png" class="main-weather-icon" />
+          <img src="images/partly_cloudy@4x.png" 
+          alt="partly cloudy"
+          class="main-weather-icon" />
           <h2 id="description"></h2>
           </div>
         
@@ -36,8 +55,18 @@
               <h1><span id="temperature"></span>º</h1>
               <p><span class="selected"><a href="#">celcius</a></span> | <a href="#">fahrenheit</a></p>
               <ul>
-              <li class="wind"><img src="images/wind-speed@4x.png" class="speed-humidity"/> <span id="wind"></span> km/h </li>
-                <li><img src="images/humidity@4x.png" class="speed-humidity" /> <span id="humidity"></span>% </li>
+              <li class="wind">
+                <img 
+                src="images/wind-speed@4x.png" 
+                class="speed-humidity"/> 
+                <span id="wind"></span> km/h 
+              </li>
+                <li>
+                  <img 
+                  src="images/humidity@4x.png" 
+                  class="speed-humidity" /> 
+                  <span id="humidity"></span>% 
+                </li>
                 </ul>
            </div>
           </div>
