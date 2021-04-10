@@ -23,6 +23,10 @@ h2 {
   font-size: 26px;
 }
 
+h2:first-letter {
+  text-transform: capitalize;
+}
+
 p {
   text-align: right;
   font-size: 18px;

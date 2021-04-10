@@ -10,6 +10,8 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -24,18 +26,18 @@
         <div class="row">
           <div class="col-6">
           <img src="images/partly_cloudy@4x.png" class="main-weather-icon" />
-          <h2>Unknown / unavailable</h2>
+          <h2 id="description"></h2>
           </div>
         
           <div class="col-6">
            <div class="overview">
               <p class="date">Friday 14:25</p>
-              <p class="location">Paris, France</p>
-              <h1>14º</h1>
+              <p class="location"><span id="city"></span>, <span id="country"></span></p>
+              <h1><span id="temperature"></span>º</h1>
               <p><span class="selected"><a href="#">celcius</a></span> | <a href="#">fahrenheit</a></p>
               <ul>
-              <li class="wind"><img src="images/wind-speed@4x.png" class="speed-humidity"/> 5 mph </li>
-                <li><img src="images/humidity@4x.png" class="speed-humidity" /> 30% </li>
+              <li class="wind"><img src="images/wind-speed@4x.png" class="speed-humidity"/> <span id="wind"></span> km/h </li>
+                <li><img src="images/humidity@4x.png" class="speed-humidity" /> <span id="humidity"></span>% </li>
                 </ul>
            </div>
           </div>
