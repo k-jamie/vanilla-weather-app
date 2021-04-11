@@ -23,20 +23,21 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form id="search-form" class="mb-4">
+        <form id="search-form">
           <div class="row">
-            <div class="col-9">
+            <div class="col-8">
         <input 
         type="search" 
         placeholder="Type a city..." 
         class="form-control"
+        autocomplete="off"
         id="city-input"
         />
         </div>
-        <div class="col-3">
+        <div class="col-4">
         <input type="submit" 
         value="Search" 
-        class="btn btn-primary w-100"/>
+        class="btn w-100"/>
         </div>
         </div>
         </form>
@@ -53,7 +54,8 @@
               <p class="date-time"><span id="date"></span></p>
               <p class="location"><span id="city"></span>, <span id="country"></span></p>
               <h1><span id="temperature"></span>º</h1>
-              <p><span class="selected"><a href="#">celcius</a></span> | <a href="#">fahrenheit</a></p>
+              <p><a href="#" id="celsius-link" class="active">celsius</a> | 
+                <a href="#" id="fahrenheit-link">fahrenheit</a></p>
               <ul>
               <li class="wind">
                 <img 
