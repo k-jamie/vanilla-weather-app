@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #bbdef0;
 }
 
 h1,
@@ -62,16 +63,19 @@ input::-moz-input-placeholder {
   border-radius: 20px;
   margin: 20px auto;
   padding: 25px 30px 30px;
+  box-shadow: 5px 5px 27px rgba(71, 83, 85, 0.3);
 }
 
 .date-time {
   font-size: 16px;
+  line-height: 30px;
   font-weight: 700;
   margin-bottom: 0;
 }
 
 .location {
   font-size: 24px;
+  line-height: 1;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -81,8 +85,8 @@ input::-moz-input-placeholder {
 }
 
 .main-weather-icon {
-  width: 180px;
-  padding-bottom: 30px;
+  width: 200px;
+  padding-bottom: 10px;
 }
 
 .speed-humidity {
