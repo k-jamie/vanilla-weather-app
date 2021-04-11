@@ -57,6 +57,11 @@ input::-moz-input-placeholder {
   color: rgba(71, 83, 85, 0.7) !important;
 }
 
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .weather-app {
   max-width: 600px;
   background-color: #ffb400;
@@ -95,6 +100,19 @@ input::-moz-input-placeholder {
 
 .overview {
   float: right;
+}
+
+.small {
+  font-size: 12px;
+  text-align: center;
+}
+
+.name {
+  color: #ea638c;
+}
+
+.project-links {
+  font-weight: 700;
 }
 
 .form-control {
