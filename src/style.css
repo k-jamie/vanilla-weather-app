@@ -44,6 +44,17 @@ a {
   text-decoration: none;
 }
 
+hr {
+  border: 3px;
+  height: 3px;
+  color: #475355;
+  opacity: 100%;
+}
+
+hr:not([size]) {
+  height: 3px;
+}
+
 a:hover {
   color: #fff;
   transition: 0.3s ease-out;
@@ -146,6 +157,27 @@ input::-moz-input-placeholder {
   color: #475355;
   font-weight: 700;
   padding: 9px 18px;
+}
+
+.forecast {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.forecast-date {
+  color: #475355;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.forecast-temperatures {
+  font-size: 14px;
+  color: #475355;
+}
+
+.forecast-temp-max {
+  font-weight: 700;
 }
 
 .btn:hover {
