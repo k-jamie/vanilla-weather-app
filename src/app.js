@@ -22,6 +22,31 @@ let day = days[date.getDay()];
 return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+    let forcastElement = document.querySelector("#forecast");
+
+    let forecastHTML = `<div class="row">`;
+    let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+    days.forEach(function (day) {
+        forecastHTML = forecastHTML +
+        `<div class="col">
+            <div class="forecast-date">${day}
+                </div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" width="100%"/>
+              <div class="forecast-temperatures">
+                <span class="forecast-temp-max">
+              18º
+              </span>
+              12º
+            </div>
+        </div>`;
+    });
+
+
+    forecastHTML = forecastHTML + `</div>`;
+    forcastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
@@ -88,3 +113,4 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 
 search("London");
+displayForecast();
