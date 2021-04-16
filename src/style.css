@@ -181,13 +181,13 @@ input::-moz-input-placeholder {
 
 .forecast-date {
   color: #475355;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 20px;
 }
 
 .forecast-temperatures {
-  font-size: 14px;
+  font-size: 15px;
   color: #475355;
 }
 
